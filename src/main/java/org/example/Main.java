@@ -9,7 +9,7 @@ class Player{
     int score;
     Player() {
     }
-    
+
     public Player(String name, int score) {}
 }
 
