@@ -10,7 +10,13 @@ class Player{
     Player() {
     }
 
-    public Player(String name, int score) {}
+    public Player(String name, int score) {
+
+    }
+    Player(Player other){
+        this.name=other.name;
+        this.score=other.score;
+    }
 }
 
     }
