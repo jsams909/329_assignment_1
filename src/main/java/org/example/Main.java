@@ -17,6 +17,12 @@ class Player{
         this.name=other.name;
         this.score=other.score;
     }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
 }
 
     }
