@@ -29,6 +29,9 @@ class Player{
     public void setScore(int score) {
         this.score = score;
     }
+    Player createClone(){
+        return new Player(this);
+    }
 }
 
     }
