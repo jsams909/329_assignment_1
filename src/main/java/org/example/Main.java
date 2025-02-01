@@ -44,10 +44,10 @@ class Player{
 
 }
 interface PriorityQueueInterface{
-    default void add(Object o){
-
+     void add(Object o);
+    Player gethighscore();
     }
+
 }
 
     }
-}
