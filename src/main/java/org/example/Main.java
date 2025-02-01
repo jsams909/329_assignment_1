@@ -1,5 +1,7 @@
 package org.example;
 
+import java.lang.classfile.Interfaces;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -40,6 +42,11 @@ class Player{
         return name.equals(player.name);
     }
 
+}
+interface PriorityQueueInterface{
+    default void add(Object o){
+
+    }
 }
 
     }
