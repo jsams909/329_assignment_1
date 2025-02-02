@@ -46,6 +46,11 @@ class Player{
 interface PriorityQueueInterface{
      void add(Object o);
     Player gethighscore();
+    void clear();
+    int getsize();
+    boolean isEmpty();
+
+
     }
 
 }
