@@ -47,6 +47,7 @@ interface PriorityQueueInterface{
 }
 class LinkedList implements PriorityQueueInterface{
     Node head;
+    Node tail;
     @Override
     public void add(Object o) {
 
