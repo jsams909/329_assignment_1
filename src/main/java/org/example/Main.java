@@ -82,6 +82,11 @@ class LinkedList implements PriorityQueueInterface{
         this.next = head.next;
 
     }
+        void addToBack(){
+            Node backNode = new Node(data);
+            tail.next = backNode ;
+            tail = backNode;
+        }
     }
 }
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
