@@ -1,11 +1,6 @@
 package org.example;
 import java.util.*;
 
-
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
 class Player{
     String name;
     int score;
@@ -44,14 +39,26 @@ class Player{
 
 }
 interface PriorityQueueInterface{
-     void add(Object o);
-    Player gethighscore();
+    void add(Object o);
+    Player getHighScore();
     void clear();
-    int getsize();
+    int getSize();
     boolean isEmpty();
+}
+class Node<T>{
+    T data;
+    Node<T> next;
 
+    public Node(T data) {
+        this.data = data;
 
     }
+}
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static void main(String[] args) {
+
 
 }
 
