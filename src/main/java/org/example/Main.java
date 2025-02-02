@@ -55,8 +55,6 @@ interface PriorityQueueInterface{
     boolean isEmpty();
 }
 class LinkedList implements PriorityQueueInterface{
-    Node head;
-    Node tail;
     @Override
     public void add(Object o) {
     Node backNode = new Node(data);
