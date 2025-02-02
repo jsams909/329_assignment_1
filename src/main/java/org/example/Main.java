@@ -45,12 +45,14 @@ interface PriorityQueueInterface{
     int getSize();
     boolean isEmpty();
 }
-class Node<T>{
-    T data;
-    Node<T> next;
+class LinkedList implements PriorityQueueInterface{
+private class Node<T>{
+    int data;
+    Node next;
 
     public Node(T data) {
-        this.data = data;
+        this.data = (int) data;
+
 
     }
 }
