@@ -46,14 +46,41 @@ interface PriorityQueueInterface{
     boolean isEmpty();
 }
 class LinkedList implements PriorityQueueInterface{
-private class Node<T>{
+    Node head;
+    @Override
+    public void add(Object o) {
+
+    }
+
+    @Override
+    public Player getHighScore() {
+        return null;
+    }
+
+    @Override
+    public void clear() {
+
+    }
+
+    @Override
+    public int getSize() {
+        return 0;
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return false;
+    }
+
+    private class Node<T>{
     int data;
     Node next;
 
     public Node(T data) {
         this.data = (int) data;
+        this.next = head.next;
 
-
+    }
     }
 }
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
