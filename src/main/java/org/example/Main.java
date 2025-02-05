@@ -12,13 +12,7 @@ import java.util.*;
             head.next = tail;
 
 }
-interface PriorityQueueInterface{
-    void add(Object o);
-    Player getHighScore();
-    void clear();
-    int getSize();
-    boolean isEmpty();
-}
+
 class LinkedList implements PriorityQueueInterface{
     @Override
     public void add(Object o) {
