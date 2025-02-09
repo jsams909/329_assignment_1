@@ -5,8 +5,8 @@ package org.example;
 class Node{
     int data;
     Node next;
-    Node head;
-    Node tail;
+    Node head = null;
+    Node tail= null;
     public Node(int data) {
         this.data = (int) data;
         this.next = head.next;
