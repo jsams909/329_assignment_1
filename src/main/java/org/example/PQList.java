@@ -7,7 +7,8 @@ class Node{
     Node next;
     Node head = null;
     Node tail= null;
-    public Node(int data) {
+    int size=0;
+     Node(int data) {
         this.data = (int) data;
         this.next = head.next;
         head.next = tail;
@@ -16,11 +17,17 @@ class Node{
 
 public class PQList implements PriorityQueueInterface{
     @Override
-    public void add(Object o) {
+    public void add(Object player) {
         Node backNode = new Node(data);
         tail.next = backNode;
         tail = backNode;
+        size++;
 
+
+    }
+
+    @Override
+    public void add(Player player) {
 
     }
 
@@ -36,7 +43,7 @@ public class PQList implements PriorityQueueInterface{
 
     @Override
     public int getSize() {
-        return 0;
+        return size;
     }
 
     @Override
